@@ -16,24 +16,32 @@ body{
 }
 
 header{
-    flex: 1 1 100vw;
     background: gray;
+    flex: 1 1 100vw;
     height: 100px;
 }
 
 nav{
-    flex: 1 1 200px;
+    flex: 1 1 100vw;
+    height: 100px;
+    background: gray;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    margin: 5%;
+    font-size: 20pt;
+}
+
+main{
+    flex: 20 1 500px;
+    height: calc(100vh -330px);
     background: gray;
 }
 
 aside{
     flex: 1 1 200px;
-    background: gray;
-}
-
-main{
-    flex: 20 1 500px;
-    height: calc(100vh -224px);
     background: gray;
 }
 
@@ -52,9 +60,14 @@ footer{
     color: white;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 @media only screen and(max-width:923px){
     main{
-        height: calc(100vh - 330px);
+        height: calc(100vh - 436px);
     }
 
     aside{
@@ -64,13 +77,3 @@ footer{
 
 }
 
-@media only screen and(max-width:717px){
-    nav{
-        height: 100px;
-    }
-
-    aside{
-        height: calc(100vh - 436px);    
-    }
-
-}
